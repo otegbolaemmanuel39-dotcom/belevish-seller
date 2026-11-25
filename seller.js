@@ -1,7 +1,7 @@
 const _vs=document.getElementById("viewStore");if(_vs&&typeof STORE_URL!=="undefined")_vs.href=STORE_URL;
 const $=i=>document.getElementById(i);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const money=n=>"$"+Number(n).toFixed(0);
+const money=n=>"₦"+Number(n).toLocaleString("en-NG");
 const root=document.documentElement;
 function setTheme(t){root.dataset.theme=t;try{localStorage.setItem("theme",t);}catch(e){}$("themeBtn").textContent=t==="dark"?"☀":"◐";}
 $("themeBtn").onclick=()=>setTheme(root.dataset.theme==="dark"?"light":"dark");
