@@ -5,4 +5,4 @@ var sb = (window.supabase && !SUPABASE_URL.includes("YOUR-"))
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 
 // Paste your Cloudflare store link here so the "View store" button works
-const STORE_URL = "https://YOUR-STORE.pages.dev";
+const STORE_URL = "https://belevish-store.otegbolaemmanuel39.workers.dev";
